@@ -1,0 +1,173 @@
+/* START BASIC STYLES */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #fff;
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+/* WELCOME SECTION */
+
+/* DESKTOP */
+.welcome-section {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  /* background: linear-gradient(90deg, black 50%, pink 50%); */
+}
+
+.welcome-items {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nombre {
+  color: orange;
+}
+.developer-title h3 {
+  color: orange;
+  font-size: 25px;
+}
+
+.linguist-title h3 {
+  font-size: 25px;
+}
+
+.hola {
+  /* height: 30%; */
+  font-size: 60px;
+  color: black;
+  align-items: baseline;
+  margin-top: 100px;
+}
+
+.hola h1 {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  /* letter-spacing: 0.15em; */
+  animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+#dev {
+  background-color: orange;
+}
+
+#translator {
+  background-color: black;
+  color: white;
+}
+.welcome-buttons {
+  border: hidden;
+  cursor: pointer;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 30%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+.welcome-buttons:hover {
+  transform: scale(1.2);
+}
+
+.me {
+  align-self: flex-end;
+  border-radius: 50%;
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+/* TABLET */
+/* @media (max-width: 900px) and (min-width: 400px) {
+}
+
+@media (max-width: 400px) {
+} */
+
+/* ****************************************************************************************************** */
+/* ABOUT SECTION */
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-image: url('fototrinidad.jpg');
+  border: solid 10px black;
+}
+
+.text-about {
+  max-width: 50%;
+  align-self: center;
+  text-align: center;
+  height: 500px;
+}
+
+.text-about p {
+  font-size: 20px;
+}
+
+/* ********************************************** */
+/* PORTFOLIO SECTION */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-header {
+  font-size: 70px;
+  color: orange;
+}
