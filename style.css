@@ -175,15 +175,99 @@ body {
 
 /* ********************************************** */
 /* PORTFOLIO SECTION */
+.portfolio-header {
+  font-size: 60px;
+  color: orange;
+  text-align: center;
+}
+.slider-container {
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  margin: 0;
+}
 
-.portfolio {
+.left-slide {
+  width: 31%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  transition: transform 0.5s easi-in-out;
+}
+
+.left-slide > div {
+  height: 100%;
+  width: 100%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+}
+.project-item-odd {
+  background-color: orange;
+}
+.project-item {
+  background-color: rgb(165, 146, 111);
 }
 
-.portfolio-header {
-  font-size: 70px;
-  color: orange;
+.left-slide h4 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
 }
+
+.right-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 60%;
+}
+
+.right-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.action-buttons button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+.action-buttons button:hover {
+  color: #222;
+}
+
+.action-buttons button:focus {
+  outline: none;
+}
+
+
+.slider-container .action-buttons button {
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  z-index: 100;
+}
+
+.slider-container .action-buttons .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
