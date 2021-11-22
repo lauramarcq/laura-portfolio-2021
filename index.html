@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/483ff3bc5a.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <title>Laura Valdivia</title>
 </head>
 
@@ -21,15 +23,15 @@
         </div>
         <div class="welcome-items">
             <div for="dev" class="developer-title">
-                <h3>I'm a Front End Web Developer</h3>
-                <button class="welcome-buttons" id="dev">Jump straight to my Web Developer Work</button>
+                <h3>Front End Web Developer</h3>
+                <button class="welcome-buttons" id="dev"><a href="#portfolio" id="devlink">Jump to Portfolio</a></button>
             </div>
             <div class="me">
                 <p>Or scroll down <br>&#x2193</p>
             </div>
             <div for="translator" class="linguist-title">
-                <h3>I'm a Linguist and Translator</h3>
-                <button class="welcome-buttons" id="translator">View my Linguist and Translator CV</button>
+                <h3>Linguist and Translator</h3>
+                <button class="welcome-buttons" id="translator"><a href="#cvs" id="cvlink">View my Translator CV</a></button>
             </div>
         </div>
         <!-- <img src="foto1.jpg" alt=""> -->
@@ -39,39 +41,110 @@
 
     <!-- START ABOUT SECTION -->
     <div class="about-container">
+        <!-- <div class="cursor"></div> -->
     <section id="about" class="about">
-        <div class="text-about">
-            <p>Hi there! Spicy jalapeno bacon ipsum dolor amet ham hock corned beef bacon filet mignon ground round
-            porchetta, cupim tri-tip doner pork belly meatloaf ham meatball sausage. Fatback alcatra cow, burgdoggen
-            pancetta t-bone boudin jowl rump tenderloin ground round. Short ribs pastrami kielbasa, picanha short loin
-            pancetta t-bone burgdoggen shank boudin swine meatball ball tip. Pork chop strip steak short loin salami.
-            Jowl pastrami hamburger, ribeye filet mignon meatball chicken pork chop rump turkey t-bone kevin ham sirloin
-            brisket.
+        
+        
+    </section>
+    <div class="text-about" id="text-about-0">
+        <p></p>
+    </div>
+        <div class="text-about" id="text-about-1">
+            <!-- <h3>FRONT END DEVELOPER</h3> -->
+            <p>Technologies I've used since October 2019:
+                <span id="technologies">
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-css3-plain-wordmark"></i> 
+                    <i class="devicon-bootstrap-plain"></i>
+                    <i class="devicon-bulma-plain"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-nodejs-plain-wordmark"></i>
+                    <i class="devicon-mongodb-plain-wordmark"></i>
+                    <i class="devicon-vuejs-plain-wordmark"></i>
+                    <i class="devicon-ruby-plain-wordmark"></i>
+                    <i class="devicon-slack-plain-wordmark"></i>
+                    <i class="devicon-xd-plain"></i>
+                    <i class="devicon-vscode-plain-wordmark"></i>
+                    <i class="devicon-git-plain-wordmark"></i>
+                    <i class="devicon-github-original-wordmark"></i>
+                    <i class="devicon-filezilla-plain-wordmark"></i>
+                    <i class="devicon-bash-plain"></i>
+
+                     </span> and UX Design.
+                 I'm happy to <a href="#contact" id="contact-link">collaborate</a>. 
+                
             </p>
         </div>
-        <div class="cursor"></div>
-        <!-- <div class="image-about">
-            <img src="fototrinidad.jpg" alt="">
-        </div> -->
-    </section>
+      
+        <div class="text-about" id="text-about-2">
+            <!-- <h3>LINGUIST AND TRANSLATOR</h3> -->
+            <p> <span>Translator and Linguist</span> with over 12 years of experience as a freelance professional.
+                Includes work as a <span>language tutor, editor, 
+                  ESL teacher, transcriber, and interpreter</span>. One day web development 
+                came knocking at the door and poof! Here I am trying to make this my full time career.
+            </p>
+        </div>
+        
+       
     </div>
     <!-- END ABOUT SECTION -->
 
     <!-- START PROJECT SECTION -->
     <section id="portfolio" class="portfolio">
         <h2 class="portfolio-header">Some Projects</h2>
-        <div class="slider-container">
-            <div class="left-slide">
-                <div class="project-item">
-                    <h4>Zulliger Test</h4>
-                    <p>Blabla</p>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <a><img src="testZ.png" style="width:100%"></a>
+                <div class="text">
+                    <p>Zulliger Test: Html, CSS, Bootstrap (for client side validations), vanilla JavaScript. EJS, Node.js for backend. 
+                        Deployment on CPanel. Still in production.
+                        It is a collaboration with other programmers. Great opportunity to learn Git and version control. 
+                    </p>
                 </div>
+            </div>
+  
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <a href="https://lauramarcq.github.io/scoreKeeper.github.io/" target="_blank">
+                    <img src="scorekeeper.png" style="width:100%">
+                </a>
+                <div class="text">
+                <p>Score Keeper: small project to learn Bulma and some JavaScript.</p>    
+                </div>
+            </div>
+  
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <a href="https://lauramarcq.github.io/tv-show-search.github.io/" target="_blank">
+                    <img src="show-search.png" style="width:100%">
+                </a>
+                <div class="text">
+                    <p>Tv Show Search: small project to learn to use APIs and Boostrap validations.</p>
+                </div>
+            </div>
+  
+        <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+  
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        
+<!--        
                 <div class="project-item-odd">
                     <h4>Parallax Recipe</h4>
-                    <p>Blabla</p>
-                </div>
-                <div class="project-item">
-                    <h4>Random Episode Generator</h4>
                     <p>Blabla</p>
                 </div>
                 <div class="project-item-odd">
@@ -94,50 +167,46 @@
                     <h4>Bingo Game</h4>
                     <p>Blabla</p>
                 </div>
-            </div>
-            <div class="right-slide">
-                <div style="background-image: url('clopis.jpg');"></div>
-                <div style="background-image: url('clopis.jpg');"></div>
-                <div style="background-image: url('clopis.jpg');"></div>
-                <div style="background-image: url('clopis.jpg');"></div>
-                <div style="background-image: url('clopis.jpg');"></div>
-                <div style="background-image: url('clopis.jpg');"></div>
-                <div style="background-image: url('clopis.jpg');"></div>
-                <div style="background-image: url('clopis.jpg');"></div>
-            </div>
-            <div class="action-buttons">
-                <button class="up-button">
-                    <i class="fas fa-arrow-up"></i>
-                </button>
-                <button class="down-button">
-                    <i class="fas fa-arrow-down"></i>
-                </button>
-            </div>
-            
-            
-            
-            
-            
+            </div>  
+             -->
             
         </div>
     </section>
     <!-- END OF PROJECT SECTION -->
 
+    <!-- CV Section -->
+    <section id="cvs">
+        <hr>
+        <h2 class="portfolio-header">My CVs</h2>
+        <div class="cv">
+            <div  class="cv-image" id="dev-cv">
+                <h3>Web Developer</h3>
+                <img src="cvimage.png" alt="" srcset="">
+            </div>
+            <div  class="cv-image" id="translator-cv">
+                <h3>Linguist and Translator</h3>
+                <img src="translator-cv.png" alt="">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- End of CV section -->
+
     <!-- START CONTACT SECTION -->
     <section id="contact" class="contact-section">
         <div class="contact-section-header">
-            <h2>Let's work together...</h2>
-            <p>Do you take milk and sugar?</p>
+            <h2>Let's work together!</h2>
+            <!-- <p>Do you take milk and sugar?</p> -->
         </div>
         <div class="contact-links">
-            <a href="https://facebook.com/freecodecamp" target="_blank" class="btn contact-details"><i
-                    class="fab fa-facebook-square"></i> Facebook</a>
-            <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="btn contact-details"><i
+           
+            <a id="profile-link" href="https://github.com/lauramarcq" target="_blank" class="btn contact-details"><i
                     class="fab fa-github"></i> GitHub</a>
-            <a href="https://twitter.com/freecodecamp" target="_blank" class="btn contact-details"><i
-                    class="fab fa-instagram"></i> Instagram</a>
-            <a href="mailto:example@example.com" class="btn contact-details"><i class="fas fa-at"></i> Email me</a>
-            <a href="tel:555-555-5555" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Text me</a>
+            <a href="https://twitter.com/lauraIsLearnin1" target="_blank" class="btn contact-details"><i
+                    class="fab fa-twitter"></i> Twitter</a>
+            <a href="mailto:laura.marcq@protonmail.com" class="btn contact-details"><i class="fas fa-at"></i> Email me</a>
+            <a href="tel:07419212598" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Text me</a>
         </div>
     </section>
     <!-- END CONTACT SECTION -->
