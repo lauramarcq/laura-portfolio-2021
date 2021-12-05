@@ -1,11 +1,11 @@
-const cursor = document.querySelector('.cursor');
+let cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', (el) => {
     cursor.style.left = el.clientX + 'px';
     cursor.style.top = el.clientY + 'px';
 })
 
 
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
