@@ -72,7 +72,7 @@ body {
   white-space: nowrap;
   margin: 0 auto;
   /* letter-spacing: 0.15em; */
-  animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 6.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -144,6 +144,7 @@ body {
   .body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
   }
   .hola {
     margin-top: 1em;
@@ -156,7 +157,7 @@ body {
     white-space: nowrap;
     margin: 0 auto;
     /* letter-spacing: 0.15em; */
-    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation: typing 6.5s steps(40, end), blink-caret 0.75s step-end infinite;
   }
   .me {
     display: none;
@@ -180,7 +181,7 @@ body {
     align-items: center;
     text-align: center;
   }
-  .developer-,
+  .developer-title,
   linguist-title {
     display: flex;
     flex-direction: column;
@@ -191,6 +192,9 @@ body {
   }
   .welcome-buttons {
     margin-left: 0%;
+  }
+  .welcome-buttons a {
+    font-size: 0.8em;
   }
 }
 
@@ -376,6 +380,10 @@ body {
     margin: 0;
     position: relative;
     font-size: 0.7em;
+  }
+
+  .text-about p {
+    font-size: 1.3em;
   }
 }
 
